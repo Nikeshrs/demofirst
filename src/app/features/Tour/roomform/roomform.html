@@ -1,0 +1,18 @@
+<form [formGroup]="group">
+    <h4>📆Make Room Reservations in Minutes</h4>
+    <label>Please Enter Your Name</label><br>
+    <input type="text" formControlName="name"><br><br>
+    <label>Email Address</label><br>
+    <input type="text" formControlName="email"><br><br>
+    <label>Phone</label><br>
+    <input type="text" formControlName="phone"><br><br>
+    <label>Adults</label><br>
+    <input type="number" formControlName="adults"><br><br>
+    <label>Children</label><br>
+    <input type="number" formControlName="children"><br><br>
+    <label>Check-in Date <Data></Data></label><br>
+    <input type="date" formControlName="inDate"><br><br>
+    <label>Check-out Date <Data></Data></label><br>
+    <input type="date" formControlName="outDate"><br><br>
+    <button (click)="submitRoom()">Submit</button>
+</form>

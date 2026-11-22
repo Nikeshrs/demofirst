@@ -1,8 +1,10 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { TourBooking } from './features/Tour/tour-booking/tour-booking';
+import { Taskbar } from './taskbar/taskbar';
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,Taskbar,RouterLink],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

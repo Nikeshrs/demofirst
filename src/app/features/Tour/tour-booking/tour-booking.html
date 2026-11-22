@@ -1,0 +1,31 @@
+<form [formGroup]="group">
+    <div class="top">
+        <img src="travel.jpg">
+        <h4>YoYo Travels</h4>
+    </div>
+    <hr>
+    <div class="bottom">
+    
+    <label>Name</label><br>
+    <input type="text" placeholder="FirstName" formControlName="firstName">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" placeholder="LastName" formControlName="lastName"><br><br>
+    <label>Email</label><br>
+    <input type="text" placeholder="Email" formControlName="email"><br><br>
+    <label>Phone</label><br>
+    <input type="text" formControlName="phone"><br><br>
+    <label>When are you planing to visit?</label><br>
+    <input type="date" formControlName="date"><br><br>
+    <label>How many people are in your group?</label><br>
+    <input type="number" formControlName="people"><br><br>
+    <label>Which tour or events are you most intrested in?</label><br>
+    <input type="text" formControlName="tour"><br><br>
+    <label>What is the best way to contact you?</label><br>
+    <input type="radio" formControlName="contactType" value="Phone"><label>Phone</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" formControlName="contactType" value="Email"><label>Email</label><br><br>
+    <button (click)="submit()">Submit</button>
+    <!-- <button routerLink="/tourlist">List</button> -->
+     </div>
+
+
+
+</form>
