@@ -42,3 +42,22 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+
+# Angular
+node_modules/
+dist/
+.angular/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+
+# .NET
+**/bin/
+**/obj/
+
+# Secrets
+**/appsettings.Development.json
+
